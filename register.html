@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TechFest 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <i data-lucide="code-2"></i>
+                <span>TechFest 2024</span>
+            </a>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/events.html">Events</a>
+                <a href="/register.html" class="active">Register</a>
+                <a href="/schedule.html">Schedule</a>
+                <a href="/leaderboard.html">Leaderboard</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="registration">
+        <div class="container">
+            <div class="form-container">
+                <h1 class="page-title">Registration</h1>
+                <form id="registrationForm" class="registration-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="college">College Name</label>
+                        <input type="text" id="college" name="college" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="year">Year</label>
+                            <select id="year" name="year" required>
+                                <option value="">Select Year</option>
+                                <option value="1">1st Year</option>
+                                <option value="2">2nd Year</option>
+                                <option value="3">3rd Year</option>
+                                <option value="4">4th Year</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="branch">Branch</label>
+                            <input type="text" id="branch" name="branch" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Select Events</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="events" value="debugging">
+                                Debugging Challenge
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="events" value="codeinDark">
+                                Code in Dark
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="events" value="uiux">
+                                UI/UX Design Challenge
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i data-lucide="instagram"></i>
+                </a>
+            </div>
+            <p class="copyright">© 2024 TechFest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+            
+    </script>
+</body>
+</html>

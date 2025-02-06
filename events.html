@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - TechFest 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <i data-lucide="code-2"></i>
+                <span>TechFest 2024</span>
+            </a>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/events.html" class="active">Events</a>
+                <a href="/register.html">Register</a>
+                <a href="/schedule.html">Schedule</a>
+                <a href="/leaderboard.html">Leaderboard</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="event-details">
+        <div class="container">
+            <h1 class="page-title">Event Details</h1>
+
+            <div class="event-detail-card">
+                <div class="event-header">
+                    <i data-lucide="code-2" class="event-icon"></i>
+                    <h2>Debugging Challenge</h2>
+                </div>
+                <div class="event-content">
+                    <div class="event-section">
+                        <h3>Description</h3>
+                        <p>Test your debugging skills by fixing code in multiple programming languages. Race against time to identify and resolve bugs in increasingly complex programs.</p>
+                    </div>
+                    <div class="event-section">
+                        <h3>Languages Allowed</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+                    <div class="event-section">
+                        <h3>Rules & Scoring</h3>
+                        <ul>
+                            <li>Time limit: 2 hours</li>
+                            <li>Points awarded based on number of bugs fixed</li>
+                            <li>Bonus points for optimal solutions</li>
+                            <li>Penalties for introducing new bugs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-detail-card">
+                <div class="event-header">
+                    <i data-lucide="laptop" class="event-icon"></i>
+                    <h2>Code in Dark</h2>
+                </div>
+                <div class="event-content">
+                    <div class="event-section">
+                        <h3>Description</h3>
+                        <p>Code without preview or syntax highlighting. Put your HTML and CSS skills to the test by coding a webpage without seeing the result until time's up.</p>
+                    </div>
+                    <div class="event-section">
+                        <h3>Rules</h3>
+                        <ul>
+                            <li>15 minutes per round</li>
+                            <li>HTML and CSS only</li>
+                            <li>No preview window</li>
+                            <li>No syntax highlighting</li>
+                        </ul>
+                    </div>
+                    <div class="event-section">
+                        <h3>Judging Criteria</h3>
+                        <ul>
+                            <li>Visual accuracy</li>
+                            <li>Code quality</li>
+                            <li>Responsive design</li>
+                            <li>Completion time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-detail-card">
+                <div class="event-header">
+                    <i data-lucide="palette" class="event-icon"></i>
+                    <h2>UI/UX Design Challenge</h2>
+                </div>
+                <div class="event-content">
+                    <div class="event-section">
+                        <h3>Description</h3>
+                        <p>Design a modern user interface based on a given prompt. Showcase your creativity and understanding of user experience principles.</p>
+                    </div>
+                    <div class="event-section">
+                        <h3>Tools Allowed</h3>
+                        <ul>
+                            <li>Figma</li>
+                            <li>Adobe XD</li>
+                            <li>Sketch</li>
+                        </ul>
+                    </div>
+                    <div class="event-section">
+                        <h3>Evaluation Criteria</h3>
+                        <ul>
+                            <li>Visual design</li>
+                            <li>User experience</li>
+                            <li>Responsiveness</li>
+                            <li>Innovation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i data-lucide="instagram"></i>
+                </a>
+            </div>
+            <p class="copyright">© 2024 TechFest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <script>
+        // Mobile menu toggle
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    const icon = mobileMenuBtn.querySelector('i');
+    if (navLinks.classList.contains('active')) {
+        icon.setAttribute('data-lucide', 'x');
+    } else {
+        icon.setAttribute('data-lucide', 'menu');
+    }
+    lucide.createIcons();
+});        
+    </script>
+</body>
+</html>
